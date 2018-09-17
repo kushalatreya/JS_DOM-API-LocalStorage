@@ -18,7 +18,6 @@ Sort the array using sort() method
 let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
 console.log(itCompanies);
 console.log(itCompanies.length);
-
 (itCompanies.forEach(function(element){
     console.log(element);
     

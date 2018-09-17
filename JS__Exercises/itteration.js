@@ -67,5 +67,83 @@ console.log(canDrink);
 const canDrink = ages.filter(age => age >= 18);
 console.log(canDrink);*/
 
-const retailCompanies = companies.filter(company => company.category==='Retail');
-console.log(retailCompanies);
+/* const retailCompanies = companies.filter(company => company.category==='Retail');
+console.log(retailCompanies); */
+
+//get 80s companies
+
+/* const eightiesCompanies = companies.filter(function(company){
+    if(company.start < 1990 && company.start > 1980){
+        return true
+    }
+})
+console.log(eightiesCompanies);
+
+const eightiesCompaniess = companies.filter(company => company.start < 1990 && company.start > 1980)
+console.log(eightiesCompaniess); */
+
+// get companies that lasted 10 years or more
+
+/* const lastedTenYears = companies.filter(function(company){
+    if(company.end - company.start >= 10){
+        return true
+    }
+});
+console.log(lastedTenYears); */
+
+/* const lastedTenYears = companies.filter(company => company.end - company.start >= 10)
+console.log(lastedTenYears); */
+
+//=====================================================
+//                             MAP
+//=====================================================
+
+//create array of companies names
+
+/* const companyNames = companies.map(function(company)    {
+    return `[${company.name}-${company.category} ${company.start} to ${company.end}]`
+});
+console.log(companyNames); */
+
+/* const companyNames = companies.map(company => `${company.name} is a ${company.category} company`)
+console.log(companyNames); */
+
+/* 
+==========================
+        Sort
+========================== */
+/* const sortedCompanies = companies.sort(function(c1,c2){
+    if (c1.start > c2.start){
+        return 1;
+    }
+    else{
+        return -1;
+    }
+
+});
+console.log(sortedCompanies); */
+
+/* const sortedCompanies = companies.sort((c1,c2) => (c1.start > c2.start ? 1 : -1 ));
+console.log(sortedCompanies); */
+
+// sort ages
+
+/* const sortedAge = ages.sort((a,b) => a-b);
+console.log(sortedAge); */
+
+/* ===========================
+            Reduce
+==============================*/
+const ageSum = ages.reduce(function(total,age){
+    return total + age;
+},0);
+
+console.log(ageSum);
+
+const combinedArrays = ages
+    .map(age => age * 2)
+    .filter(age => age >= 18)
+    .sort((age1,age2) => age1 - age2)
+    .reduce( (a,b) => a + b, 0 );
+
+    console.log(combinedArrays);
