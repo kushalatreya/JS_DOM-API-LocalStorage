@@ -26,7 +26,7 @@ let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 
 //using arrow function
 //not working
 /* const listCompanies = itCompanies.forEach((element) => element )
-console.log(listCompanies); */ 
+console.log(listCompanies); */
 
 console.log(companies.toUpperCase());
 
@@ -42,13 +42,13 @@ loop
 =============================*/
 /* Loop
 a. Iterate 0 to 10 using for loop, do the same using while and do while loop.*/
-for  (let i = 0; i <= 10; i++){
+for (let i = 0; i <= 10; i++) {
     console.log(i);
 }
 //while
 let i = 0;
-while ( i <= 10) {
-  console.log(i);
+while (i <= 10) {
+    console.log(i);
     i++
 }
 
@@ -66,20 +66,22 @@ for (let i = 10; i >= 0; i--) {
 }
 
 //while
-{let j = 10;
-while (j >= 0){
-    console.log(j);
-    j--
-}}
+{
+    let j = 10;
+    while (j >= 0) {
+        console.log(j);
+        j--
+    }
+}
 
 //do while
 
 let l = 10;
-do{
+do {
     console.log(l)
     l--
 }
-while(l >= 0)
+while (l >= 0)
 
 /* ===============================================
 function
@@ -110,10 +112,10 @@ fullName()
 
 } */
 
-function addNumbers(a,b){
+function addNumbers(a, b) {
     console.log(a + b)
 }
-addNumbers(2,4);
+addNumbers(2, 4);
 
 //Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
@@ -140,13 +142,39 @@ capitalizeArray.forEach((element) => console.log(element.toUpperCase()))
 //Declare a function name removeItem. It returns array after removing an item.
 let myArray = ['a', 'b', 'c', 'd'];
 
-console.log( myArray.slice(1))
+console.log(myArray.slice(1))
 
 //Declare a function name addItem. It returns array after adding an item.
-let addItem = function(){
-let list = ["foo", "bar"];
-list.push("baz");
-console.log(list)
+let addItem = function () {
+    let list = ["foo", "bar"];
+    list.push("baz");
+    console.log(list)
 }
 
 addItem()
+
+/* Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncomes,
+ totalExpenses, acountInfo,addIncome, addExpence and accountBalance methods. 
+ Incomes is a set of incomes and its description and the same for expenses. */
+
+
+/* Functional Programming
+Declare a function called getStringLists which take array as a parameter  and it returns array only with string items.
+Declare a function called categorizeCountries which returns array of countries have some common pattern(you find the countries array from slack).
+Declare a getFirstTenCountries function and return an array of ten countries
+Declare a getLastTenCountries function and return an array of ten countries
+Find out with which letter are there many countries */
+
+let ourArray = ['abc',1,2,3,'cde']
+
+let getStringLists = function(){
+    return ourArray.filter((element) => element=element*0!= 0);
+}
+console.log(getStringLists());
+
+let countryList = ['Finland','Sweden','France','Ireland','Holland']
+let categorizeCountries = function(){
+   //return countryList.filter((country)=> country.indexOf('l')=== 0)
+   return countryList.filter((country) => country.endsWith('land'))
+}
+console.log(categorizeCountries())
