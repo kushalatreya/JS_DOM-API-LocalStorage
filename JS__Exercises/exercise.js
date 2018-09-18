@@ -117,13 +117,36 @@ addNumbers(2,4);
 
 //Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
-let num =[1010,4,4,4,5,6,7,8,9]
-let emptyArray =[]
-printArray = function(arr){
-    arr.forEach(element => {
+/* let array1 = [1,22,33];
+array1.forEach(function(element){
+    console.log(element)
+}) */
 
-       let store = emptyArray.push(element);
-       console.log(store)   
-    });
+let printArray = [1, 22, 33];
+printArray.forEach((element) => console.log(element));
+
+// Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array(dont’ use method).
+
+const reverseArray = [77, 88, 99]
+reverseArray.reverse()
+reverseArray.forEach((elements) => console.log(elements));
+
+// Declare a function name capitalizeArray. It takes array as a parameter and it returns  the capitalized array.
+
+
+const capitalizeArray = ['dog', 'cat', 'monkey']
+capitalizeArray.forEach((element) => console.log(element.toUpperCase()))
+
+//Declare a function name removeItem. It returns array after removing an item.
+let myArray = ['a', 'b', 'c', 'd'];
+
+console.log( myArray.slice(1))
+
+//Declare a function name addItem. It returns array after adding an item.
+let addItem = function(){
+let list = ["foo", "bar"];
+list.push("baz");
+console.log(list)
 }
-printArray(num)
+
+addItem()
