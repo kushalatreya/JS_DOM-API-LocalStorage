@@ -1,4 +1,4 @@
-const companies= [
+/* const companies= [
   {name: "Company One", category: "Finance", start: 1981, end: 2004},
   {name: "Company Two", category: "Retail", start: 1992, end: 2008},
   {name: "Company Three", category: "Auto", start: 1999, end: 2007},
@@ -10,7 +10,7 @@ const companies= [
   {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
 ];
 
-const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]; */
 
 
 //code starts from here
@@ -134,7 +134,7 @@ console.log(sortedAge); */
 /* ===========================
             Reduce
 ==============================*/
-const ageSum = ages.reduce(function(total,age){
+/* const ageSum = ages.reduce(function(total,age){
     return total + age;
 },0);
 
@@ -147,3 +147,4 @@ const combinedArrays = ages
     .reduce( (a,b) => a + b, 0 );
 
     console.log(combinedArrays);
+ */

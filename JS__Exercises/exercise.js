@@ -172,9 +172,33 @@ let getStringLists = function(){
 }
 console.log(getStringLists());
 
-let countryList = ['Finland','Sweden','France','Ireland','Holland']
 let categorizeCountries = function(){
    //return countryList.filter((country)=> country.indexOf('l')=== 0)
    return countryList.filter((country) => country.endsWith('land'))
 }
 console.log(categorizeCountries())
+
+//to print first 10 countries   
+console.log(countryList.slice(0, 10))
+
+function getLastTenCountries(){
+     countryList.reverse();
+    return countryList.slice(0,10)
+}
+/* console.log(getLastTenCountries())
+ */
+function myFunction(){
+for(let i=countryList.length-1; i>countryList.length - 10; i--){
+    console.log(i);
+    
+console.log(countryList[i])}}
+
+myFunction()
+
+const letterWithManyCountries = (arr) => {
+    const myCountries = arr.map((s) => s[0])
+        .reduce((a, b) => (a[b] = a[b] + 1 || 1) && a, {})
+    return [Object.keys(myCountries).reduce((a, b) => myCountries[a] > myCountries[b] ? a : b)
+        , Math.max(...Object.values(myCountries))]
+}
+console.log(letterWithManyCountries())
