@@ -195,10 +195,7 @@ console.log(countryList[i])}}
 
 myFunction()
 
-const letterWithManyCountries = (arr) => {
-    const myCountries = arr.map((s) => s[0])
-        .reduce((a, b) => (a[b] = a[b] + 1 || 1) && a, {})
-    return [Object.keys(myCountries).reduce((a, b) => myCountries[a] > myCountries[b] ? a : b)
-        , Math.max(...Object.values(myCountries))]
+function manyCountriesWithSameFirstLetter() {
+
 }
-console.log(letterWithManyCountries())
+console.log(manyCountriesWithSameFirstLetter());
