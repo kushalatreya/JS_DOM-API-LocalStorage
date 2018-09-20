@@ -1,0 +1,11 @@
+.headerDiv{
+    margin: auto;
+    height: auto;
+    width: auto;
+   /*  background-color: #338833; */
+    
+}
+.elements_under_header{
+    display: grid;
+    justify-content: center;
+}
