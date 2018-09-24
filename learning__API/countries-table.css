@@ -1,0 +1,36 @@
+
+body {
+    text-align: center;
+    font-size: 2em;
+    text-align: center;
+    background-image: url(http://tucsonafrolatinfestival.com/wp-content/uploads/2018/07/world-map-image-download-hd-fresh-hd-world-map-wallpaper-14-grey-scale-map-233.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.headerDiv {
+    display: flex;
+    border: solid 2px skyblue;
+
+}
+
+.headerDiv div {
+    flex: 1;
+    border: solid 2px skyblue;
+    background-color: aliceblue;
+}
+
+.divWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.repeatingDIV {
+    display:flex;
+    flex-wrap: wrap;    
+}
+
+.repeatingDIV div {
+    flex: 1;
+    border: solid 2px skyblue;
+
+}
