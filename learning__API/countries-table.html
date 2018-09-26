@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fetching__API</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="countries-table.css">
-    
+
 </head>
+
 <body>
-<button id="getText">Show Countries</button>
     <div class="headerDiv">
-<div>Countries Name <i class="fas fa-arrows-alt-v"></i></div>
-        <div>Capital</div>
-        <div>Population</div>
+        <div>Countries <i class="fas fa-sort-alpha-down sort-countries-name"></i><i class="fas fa-sort-alpha-up reverse-countries-name "></i>
+        </div>
+        <div>Capital <i class="fas fa-sort-alpha-down sort-capital-name"></i> <i class="fas fa-sort-alpha-up reverse-capital-name"></i>
+        </div>
+        <div>Population <i class="fas fa-sort-numeric-down sort-population-name"></i><i class=" reverse-population-name fas fa-sort-numeric-up"></i>
+        </div>
+        <div>Region</div>
         <div>Flag</div>
     </div>
-    
+
     <div class="mainDiv">
-        
+
     </div>
     <script src="countriesTable.js"></script>
-    
+
 </body>
+
 </html>
