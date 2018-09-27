@@ -1,14 +1,4 @@
 
-body {
-    text-align: center;
-    font-size: 2em;
-    text-align: center;
-    background-image: url(http://tucsonafrolatinfestival.com/wp-content/uploads/2018/07/world-map-image-download-hd-fresh-hd-world-map-wallpaper-14-grey-scale-map-233.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
-  
-}
-
 .headerDiv {
     display: flex;
     border: solid 2px skyblue;
@@ -19,6 +9,38 @@ body {
     flex: 1;
     border: solid 2px skyblue;
     background-color: aliceblue;
+}
+.search-input{
+    border: solid 2px skyblue;
+    background-color: aliceblue;
+    height: 100%;
+    width: auto;
+  
+    
+
+}
+
+.search-input input{
+     flex: 1;
+     border: solid 2px skyblue;
+     background-color: aliceblue;
+     width: 20%;
+     height: 100%;
+     padding: 10px ;
+     border-radius: 8%;
+     margin: 20px 0;
+    
+    
+}
+
+body {
+    text-align: center;
+    font-size: 2em;
+    text-align: center;
+    background-image: url(http://tucsonafrolatinfestival.com/wp-content/uploads/2018/07/world-map-image-download-hd-fresh-hd-world-map-wallpaper-14-grey-scale-map-233.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+
 }
 
 .divWrapper {
@@ -37,6 +59,7 @@ body {
     flex: 1;
     border-right: solid 2px skyblue;
     align-self: center;
+    
    
 }
 

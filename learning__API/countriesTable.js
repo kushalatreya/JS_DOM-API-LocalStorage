@@ -1,8 +1,9 @@
 //document.getElementById('getText').addEventListener('click', getCountriesListFunction);
 
-
+ document.querySelector('.search-input').addEventListener('onkeydown', searchFunction )
 let divWrapper = document.querySelector('.mainDiv')
 let repeatingDiv = document.createElement('div');
+let searchInput = document.querySelector('.search-input');
 
 function getCountriesListFunction() {
     //it clears page everytime this function is exicuted, so, the tabe of countries wouldn't repeat.
@@ -11,18 +12,18 @@ function getCountriesListFunction() {
         .then(response => response.json())
         .then(countries => {
             document.querySelector('.sort-countries-name').addEventListener('click', () => {
-                
+
                 showCountries(sortCountryName(countries));
-               
-            } );
+
+            });
             document.querySelector('.reverse-countries-name').addEventListener('click', () => {
 
-               showCountries(sortCountryName(countries).reverse());
+                showCountries(sortCountryName(countries).reverse());
 
             });
             document.querySelector('.sort-capital-name').addEventListener('click', () => {
 
-            showCountries(sortCountryCapital(countries));
+                showCountries(sortCountryCapital(countries));
 
             });
             document.querySelector('.reverse-capital-name').addEventListener('click', () => {
@@ -36,11 +37,12 @@ function getCountriesListFunction() {
             document.querySelector('.reverse-population-name').addEventListener('click', () => {
                 showCountries(sortPopulation(countries).reverse());
             });
+            
             //sortPopulation(countries);
             //sortCountryCapital(countries);
             //sortCountryName(countries)
             showCountries(countries);
-
+            searchFunction(countries);
             //forSelf: we create function to save the data from api in the memory location, 
         })
 }
@@ -88,7 +90,7 @@ function showCountries(countries) {
         repeatingDiv.appendChild(countriesCapital);
         repeatingDiv.appendChild(countriesPopulation);
         repeatingDiv.appendChild(countriesRegion);
-       // countriesFlag.appendChild(countriesFlagImage);
+        // countriesFlag.appendChild(countriesFlagImage);
         repeatingDiv.appendChild(countriesFlagImage);
         //repeatingDiv.appendChild(countriesFlag)
         divWrapper.appendChild(repeatingDiv);
@@ -102,7 +104,7 @@ function showCountries(countries) {
 
 
 function styling() {
-   // repeatingDiv.style.backgroundColor = 'aliceBlue'
+    // repeatingDiv.style.backgroundColor = 'aliceBlue'
     repeatingDiv.style.border = 'solid'
     repeatingDiv.style.borderColor = 'skyBlue'
     repeatingDiv.style.borderWidth = '2px'
@@ -139,4 +141,12 @@ function sortCountryName(countries) {
         }
     });
     return sortedByName;
+}
+
+function searchFunction(countries){
+    const searchedElements = countries.filter((function(country){
+        (country.name = searchInput.value)
+        return true;
+    }));
+    console(searchedElements);
 }
