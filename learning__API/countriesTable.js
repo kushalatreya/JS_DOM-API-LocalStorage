@@ -1,6 +1,6 @@
 //document.getElementById('getText').addEventListener('click', getCountriesListFunction);
 
- document.querySelector('.search-input').addEventListener('onkeydown', searchFunction )
+document.querySelector('.search-input').addEventListener('onkeydown', searchFunction )
 let divWrapper = document.querySelector('.mainDiv')
 let repeatingDiv = document.createElement('div');
 let searchInput = document.querySelector('.search-input');
@@ -36,8 +36,7 @@ function getCountriesListFunction() {
             });
             document.querySelector('.reverse-population-name').addEventListener('click', () => {
                 showCountries(sortPopulation(countries).reverse());
-            });
-            
+            });            
             //sortPopulation(countries);
             //sortCountryCapital(countries);
             //sortCountryName(countries)
@@ -97,11 +96,8 @@ function showCountries(countries) {
 
         //styling function is exicuted each time when the forEach runs.
         styling()
-
     })
-
 }
-
 
 function styling() {
     // repeatingDiv.style.backgroundColor = 'aliceBlue'
