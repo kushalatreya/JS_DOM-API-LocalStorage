@@ -9,20 +9,26 @@
 </head>
 <body>
     <h1>Account Balance</h1>
-    <input type="text" placeholder="description">
-    <input type="text" placeholder="Amount">
-    <input type="number" placeholder="Income">
-    <button>Add</button>
+    <input class="input-description" type="text" placeholder="description">
+    <input class="input-amount" type="number" placeholder="Amount">
+    <select class="select">
+        <option class="input-income"value="income">Income</option>
+        <option class="input-expense"value="expense">Expense</option>
+    </select>
+    <button class="add-button">Add</button>
     
     <div class="body">
-        <div class="income">
+        <div class="generated-income">
             <h4>Income</h4> 
         </div>
-        <div class="expense">
+        <div class="generated-expense">
             <h4>
                 Expense</h4>
         </div>
-        <div>Balance</div>
+        <div class="generated-balance">
+            <h4>Balance</h4>
+        </div>
     </div>
+    <script src="accountBalanceTracker.js"></script>
 </body>
 </html>
