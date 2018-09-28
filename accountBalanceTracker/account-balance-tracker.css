@@ -1,8 +1,24 @@
+body{
+    margin:auto;
+    width: auto;
+
+}
 .body{
-    display: flex;
-    border: 2px solid yellow;
+    
+    
+    font-size: 2em;
 }
 .body div{
-    flex: 1;
-     border: 2px solid black;
+    
+     border: 0.5px solid black;
+}
+.display-income{
+         border: 2px solid green;
+         background-color: #49E20E;
+
+}
+
+.display-expense{
+    border: 2px solid red;
+    background-color: #FA8072
 }
