@@ -14,11 +14,18 @@ body{
 }
 .display-income{
          border: 2px solid green;
-         background-color: #49E20E;
+         background-color:#CDFFD8;
 
 }
 
 .display-expense{
     border: 2px solid red;
-    background-color: #FA8072
+    background-color: #FFDCE0
+}
+
+.display-balance{
+    background-color: yellow;
+}
+display-expense element.Id {
+    visibility:collapse;
 }
