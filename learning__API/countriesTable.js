@@ -1,39 +1,45 @@
 let divWrapper = document.querySelector('.mainDiv')
 let repeatingDiv = document.createElement('div');
 let inputValue = document.querySelector('.search-input');
+let sortCountriesName = document.querySelector('.sort-countries-name');
+let reverseCountriesName = document.querySelector('.reverse-countries-name');
+let sortCapitalName = document.querySelector('.sort-capital-name');
+let reverseCapitaName = document.querySelector('.reverse-capital-name');
+let sortPopulationName = document.querySelector('.sort-population-name');
+let reversePopulationName = document.querySelector('.reverse-population-name');
 
 function getCountriesListFunction() {
     const url = 'https://restcountries.eu/rest/v2/all';
     fetch(url)
         .then(response => response.json())
         .then(countries => {
-            document.querySelector('.sort-countries-name').addEventListener('click', () => {
+         sortCountriesName.addEventListener('click', () => {
 
                 showCountries(sortCountryName(countries));
 
             });
-            document.querySelector('.reverse-countries-name').addEventListener('click', () => {
+           reverseCountriesName.addEventListener('click', () => {
 
                 showCountries(sortCountryName(countries).reverse());
 
             });
-            document.querySelector('.sort-capital-name').addEventListener('click', () => {
+            sortCapitalName.addEventListener('click', () => {
 
                 showCountries(sortCountryCapital(countries));
 
             });
-            document.querySelector('.reverse-capital-name').addEventListener('click', () => {
+            reverseCapitaName.addEventListener('click', () => {
 
                 showCountries(sortCountryCapital(countries).reverse());
 
             });
-            document.querySelector('.sort-population-name').addEventListener('click', () => {
+           sortPopulationName.addEventListener('click', () => {
                 showCountries(sortPopulation(countries));
             });
-            document.querySelector('.reverse-population-name').addEventListener('click', () => {
+           reversePopulationName.addEventListener('click', () => {
                 showCountries(sortPopulation(countries).reverse());
             });
-            document.querySelector('.search-input').addEventListener("keyup", () => {
+            inputValue.addEventListener("keyup", () => {
                 divWrapper.innerHTML = "";
                 Search(countries);
             })
