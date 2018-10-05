@@ -5,12 +5,16 @@
 
 }
 
+.headerDiv i {
+    opacity: 0.4;
+}
+
 .headerDiv div {
     flex: 1;
     border: solid 2px skyblue;
     background-color: aliceblue;
 }
-.search-input{
+.search-input-div {
     border: solid 2px skyblue;
     background-color: aliceblue;
     height: 100%;
@@ -20,7 +24,7 @@
 
 }
 
-.search-input input{
+.search-input {
      flex: 1;
      border: solid 2px skyblue;
      background-color: aliceblue;
@@ -65,5 +69,6 @@ body {
 
 i:hover {
     cursor: pointer;
-    background-color: yellow;
+    opacity: 1;
+    font: outline;
 }
