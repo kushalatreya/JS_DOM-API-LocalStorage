@@ -10,7 +10,7 @@
 <body>
     <h1>Account Balance</h1>
     <input class="input-description" type="text" placeholder="description">
-    <input class="input-amount" type="number" placeholder="Amount">
+    <input class="input-amount" type="number" placeholder="Amount" onkeyup="conformInputNumValid(this)" required />
     <select class="select">
         <option class="input-income"value="income">Income</option>
         <option class="input-expense"value="expense">Expense</option>
