@@ -13,12 +13,12 @@ function getCountriesListFunction() {
     fetch(url)
         .then(response => response.json())
         .then(countries => {
-         sortCountriesName.addEventListener('click', () => {
+            sortCountriesName.addEventListener('click', () => {
 
                 showCountries(sortCountryName(countries));
 
             });
-           reverseCountriesName.addEventListener('click', () => {
+            reverseCountriesName.addEventListener('click', () => {
 
                 showCountries(sortCountryName(countries).reverse());
 
@@ -33,10 +33,10 @@ function getCountriesListFunction() {
                 showCountries(sortCountryCapital(countries).reverse());
 
             });
-           sortPopulationName.addEventListener('click', () => {
+            sortPopulationName.addEventListener('click', () => {
                 showCountries(sortPopulation(countries));
             });
-           reversePopulationName.addEventListener('click', () => {
+            reversePopulationName.addEventListener('click', () => {
                 showCountries(sortPopulation(countries).reverse());
             });
             inputValue.addEventListener("keyup", () => {
