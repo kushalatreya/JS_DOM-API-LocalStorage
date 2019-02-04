@@ -5,17 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DOM Learning</title>
+    <title>TableGenerator</title>
+    <link rel="stylesheet" href="tableGeneratorCSS.css">
 </head>
 
-<body class="wrapper">
-    <h1 class="heading">use console to view</h1>
-   
+<body>
 
+
+    <div class="main-body">
+
+        <div class="headerDiv">
+            <div class="elements_under_header">
+                <h2>html table generator</h2>
+                <p>enter number of rows:
+                    <input type="number" class="user-input-rows">
+                    enter number of column:
+                    <input type="number" class="user-input-col"></p>
+                <p>table width in percentage:
+                    <input type="number" class="user-input-table-width">
+                    border width in pixel:
+                    <input type="number" class="user-input-border-width"></p>
+                <p>table background color:
+                    <input class='user-input-background-color' type="color" value="#F0F0F0">
+                    header background color:
+                    <input type="color" class='user-input-header-color' value="#989898">
+                    Body background color:
+                    <input type="color" class='user-input-body-color' value="#D0D0D0"></p>
+                <p>Border color:
+                    <input type="color" class='user-input-border-color' value='#404040'>
+                    Font color:
+                    <input type="color" class='user-input-font-color' value="#000000"></p>
+                <p>Font Type:
+                    <select>
+                        <option value="Type1">Type1</option>
+                        <option value="type2">type2</option>
+                    </select>
+                    <select>
+                        <option value="Type1">Type1</option>
+                    </select>
+                    Text Align
+                    <select>
+                        <option value="Type1">Type1</option>
+                        <option value="Type1">Type1</option>
+                        <option value="Type1">Type1</option>
+                    </select>
+                    <input type="button" value="Generate a table." class="generate-table-button" >
+                </p>
+            </div>
+        </div>
     </div>
-    <script src="TableGenerator.js"></script>
-    <!-- <script src="dom.js"></script> -->
+
+
+<button id="getText">get text</button>
+<div class="mainDiv">
+
+</div>
+
+
+<script src="../learning__API/main.js"></script>
     
+    <script src="TableGenerator.js"></script>
 </body>
 
 </html>
